@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Worth Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+    <div class="container">
+      <h1>Data Worth Quiz</h1>
+      <form id="data-worth-form">
+        <div class="form-group">
+          <label for="worth">On a scale of 1 to 10, how much do you think your personal data is worth?</label>
+          <input type="number" id="worth" name="worth" min="1" max="10" required>
+        </div>
+        <div class="form-group">
+          <label for="accounts">How many social media accounts do you have?</label>
+          <input type="number" id="accounts" name="accounts" min="0" required>
+          <label for="marital">What price would you put on these?: Marital Status, No. Of Children 
+          you have, etc</label>
+          <input type="number" id="marital" name="marital" min="0" required>
+          <label for="age">How much is this info about you worth?: Age, Job, Ethnicity</label>
+          <input type="number" id="age" name="age" min="0" required>
+          <label for="credit">How much do you value this about you?: Where you live, credit rating, etc
+          </label>
+          <input type="number" id="credit" name="credit" min="0" required>
+
+          <label for="personal">How much is your personal information worth to you: email address, telephone, etc
+          </label>
+          <input type="number" id="personal" name="personal" min="0" required>
+
+        </div>
+        <div class="form-group">
+          <label for="track">Have often do you think your web browsing history is tracked?</label>
+          <select id="track" name="track" required>
+            <option value="">-- Please select --</option>
+            <option value="yes">Very Often</option>
+            <option value="no">Not Often</option>
+          </select>
+
+          <label for="shared">Have you ever shared your personal data with third-party companies or organizations?</label>
+          <select id="shared" name="shared" required>
+            <option value="">-- Please select --</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="result" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
